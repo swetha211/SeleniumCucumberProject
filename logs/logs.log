@@ -1,0 +1,62 @@
+[INFO ] 2023-09-07 11:41:11.437 [TestNG-PoolService-0] BaseClass - Logged in successfully
+[ERROR] 2023-09-07 11:47:12.397 [TestNG-PoolService-0] BaseClass - file not found
+java.io.FileNotFoundException: C:\Users\swesathe\NatWest_WorkSpace\SeleniumCucumberProject\src\test\resources\properties\config1.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at configuration.BaseClass.<init>(BaseClass.java:27) ~[test-classes/:?]
+	at stepDefinitions.Hooks.<init>(Hooks.java:10) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647) ~[picocontainer-2.15.jar:?]
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678) ~[picocontainer-2.15.jar:?]
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:49) ~[cucumber-picocontainer-7.2.3.jar:7.2.3]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.2.3.jar:7.2.3]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64) ~[cucumber-java-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:89) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132) ~[cucumber-testng-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151) ~[cucumber-core-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129) ~[cucumber-testng-7.2.3.jar:7.2.3]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35) ~[cucumber-testng-7.2.3.jar:7.2.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17) ~[testng-7.8.0.jar:7.8.0]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+[INFO ] 2023-09-07 12:18:25.423 [TestNG-PoolService-0] BaseClass - Logged in successfully
+[INFO ] 2023-09-07 12:18:28.564 [TestNG-PoolService-0] BaseClass - extracted actual name of products successfully
+[INFO ] 2023-09-07 12:18:29.498 [TestNG-PoolService-0] BaseClass - Driver closed successfully
+[INFO ] 2023-09-07 12:20:11.447 [TestNG-PoolService-0] BaseClass - Logged in successfully
+[INFO ] 2023-09-07 12:20:15.196 [TestNG-PoolService-0] BaseClass - Driver closed successfully
+[INFO ] 2023-09-07 12:21:10.611 [TestNG-PoolService-0] BaseClass - Logged in successfully
+[INFO ] 2023-09-07 12:21:15.721 [TestNG-PoolService-0] BaseClass - extracted actual name of products successfully
+[INFO ] 2023-09-07 12:21:16.247 [TestNG-PoolService-0] BaseClass - Driver closed successfully
